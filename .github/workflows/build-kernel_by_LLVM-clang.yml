@@ -126,9 +126,9 @@ jobs:
              tar -C llvm-clang/ -xf clang901.tar.xz
         fi
 
-        if [ ${{ env.LLVM_CLANG_VERSION }} = 8.0.1 ]; then
-             wget -O clang801.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-8.0.1/clang+llvm-8.0.1-x86_64-linux-gnu-ubuntu-14.04.tar.xz
-             tar -C llvm-clang/ -xf clang801.tar.xz
+        if [ ${{ env.LLVM_CLANG_VERSION }} = 19.1.0 ]; then
+             wget -O clang1910.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-19.1.0-rc3/LLVM-19.1.0-rc3-Linux-X64.tar.xz
+             tar -C llvm-clang/ -xf clang1910.tar.xz
         fi
               
 
