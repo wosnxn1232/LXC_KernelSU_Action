@@ -117,9 +117,9 @@ jobs:
         fi
 
 
-        if [ ${{ env.SLIM_LLVM_CLANG_VERSION }} = 11.1.0 ]; then
-             wget -O clang111.tar.xz https://github.com/tomxi1997/Toolchain-for-amd64-hosts/releases/download/v1/llvm-11.1.0-x86_64.tar.xz
-             tar -C llvm-clang/ -xf clang111.tar.xz
+        if [ ${{ env.SLIM_LLVM_CLANG_VERSION }} = 19.1.0 ]; then
+             wget -O clang191.tar.xz https://cdn.kernel.org/pub/tools/llvm/files/llvm-19.1.0-rc3-x86_64.tar.gz
+             tar -C llvm-clang/ -xf clang191.tar.xz
         fi
         
       
